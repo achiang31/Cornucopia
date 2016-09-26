@@ -1,0 +1,27 @@
+include mixins
+doctype
+html( lang="en" )
+  head
+    title Baking Bootstrap Snippets with Jade
+    meta( charset='utf-8' )
+    meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+    meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+    meta( name='description', content='Baking Bootstrap Snippets with Jade' )
+    //- Bootswatch Theme
+    link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/paper/bootstrap.min.css", rel="stylesheet")
+    link(href="/stylesheets/style.css", rel="stylesheet")
+
+
+  body(style="padding-bottom:10rem;")
+    .container-fluid
+        block content
+
+
+    //- munchies is the name, dropdown_menu is the id of the item, third parameter would be the style.
+    //- slash means home directory
+    //- This sends a get request to index.js, which brings you to other.js
+
+    script( src='//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js' )
+    script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
+    script( src='/javascripts/formInfoSend.js' )
+    script( src='/javascripts/userConfirmation.js' )
